@@ -38,7 +38,7 @@ jsonld now supports a documentLoader options parameter.
 
 ```javascript
 var jsonld = require('jsonld');
-var jsonldcache = require('jsonldcache')( { contextDir: __dirname + '/../contexts', log :logger.info } );
+jsonldcache = require('json-ld-context-cache')( { contextDir: __dirname + '/node_modules/json-ld-context-cache/contexts', log :logger.info });
 var options = {documentLoader:jsonldcache.documentLoader};
 
 function logObj( msg ){
