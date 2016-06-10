@@ -8,7 +8,7 @@ Essentially, by caching json-ld URL lookups, the time for applying json-ld norma
 The [https://github.com/msporny/json-jsonld-basic-perftest](context cache test suite) shows how this may be applied.
 
 Replace the jsonld node module "documentLoader" function with a cache lookup.
-This code needs to be adapted.
+Original cache example:
 
 ```javascript
 var async = require('async');
@@ -31,3 +31,27 @@ jsonld.documentLoader = function(url, callback) {
   }
 };
 ````
+
+#using json-ld-context-cache
+
+jsonld now supports a documentLoader options parameter.
+
+```javascript
+var jsonld = require('jsonld');
+var jsonldcache = require('jsonldcache')( { contextDir: __dirname + '/../contexts', log :logger.info } );
+var options = {documentLoader:jsonldcache.documentLoader};
+
+function logObj( msg ){
+  return function(err,obj){
+    if( err ) {
+      logger.info( `${msg} Error ${err}`);
+    }else{
+      var res = JSON.stringify(obj,null,2);
+      logger.info( `${msg} : ${res}` );
+    }
+  };
+}
+
+jsonld.expand(jsonObject, options, logObj(`${fname} expand`) );
+
+```
