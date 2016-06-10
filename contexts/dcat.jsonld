@@ -1,0 +1,1628 @@
+{
+  "@context": {
+    "dcat": "http://www.w3.org/ns/dcat#",
+    "dcterms": "http://purl.org/dc/terms/",
+    "dctype": "http://purl.org/dc/dcmitype/",
+    "foaf": "http://xmlns.com/foaf/0.1/",
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "schema": "http://schema.org/",
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "vann": "http://purl.org/vocab/vann/",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "voaf": "http://purl.org/vocommons/voaf#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "_:Nbc9fd44ecece40bf83ce32fc4d47a91f",
+      "foaf:name": "Boris Villazón-Terrazas"
+    },
+    {
+      "@id": "dcat:byteSize",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "ja",
+          "@value": "バイトによる配信のサイズ。"
+        },
+        {
+          "@language": "el",
+          "@value": "Το μέγεθος μιας διανομής σε bytes."
+        },
+        {
+          "@language": "ar",
+          "@value": "الحجم بالبايتات "
+        },
+        {
+          "@language": "en",
+          "@value": "The size of a distribution in bytes."
+        },
+        {
+          "@language": "es",
+          "@value": "El tamaño de una distribución en bytes"
+        },
+        {
+          "@language": "fr",
+          "@value": "La taille de la distribution en octects"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "dcat:Distribution"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/vocab-dcat/"
+      },
+      "rdfs:label": [
+        {
+          "@language": "el",
+          "@value": "μέγεθος σε bytes"
+        },
+        {
+          "@language": "ar",
+          "@value": "الحجم بالبايت"
+        },
+        {
+          "@language": "es",
+          "@value": "tamaño en bytes"
+        },
+        {
+          "@language": "ja",
+          "@value": "バイト・サイズ"
+        },
+        {
+          "@language": "fr",
+          "@value": "taille en octects"
+        },
+        {
+          "@language": "en",
+          "@value": "byte size"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "vann:usageNote": [
+        {
+          "@language": "el",
+          "@value": "Το μέγεθος σε bytes μπορεί να προσεγγιστεί όταν η ακριβής τιμή δεν είναι γνωστή.\n          Η τιμή της dcat:byteSize θα πρέπει να δίνεται με τύπο δεδομένων xsd:decimal"
+        },
+        {
+          "@language": "es",
+          "@value": "El tamaño en bytes puede ser aproximado cuando no es conocido el tamaño exacto.\n          El valor literal de dcat:byteSize debe ser tipado como xsd:decimal"
+        },
+        {
+          "@language": "fr",
+          "@value": "La taille en octects peut être approximative lorsque l'on ignore la taille réelle.\n\t\t\t\t\tLa valeur littérale de dcat:byteSize doit être de type xsd:decimal"
+        },
+        {
+          "@language": "en",
+          "@value": "The size in bytes can be approximated when the precise size is not known. \n          The literal value of dcat:byteSize should by typed as xsd:decimal"
+        },
+        {
+          "@language": "ar",
+          "@value": "الحجم يمكن أن يكون تقريبي إذا كان الحجم الدقيق غير معروف"
+        },
+        {
+          "@language": "ja",
+          "@value": "正確なサイズが不明である場合、サイズは、バイトによる近似値を示すことができます。"
+        }
+      ]
+    },
+    {
+      "@id": "_:N5d9de3ef62ed4168b0ed0b742974f8d7",
+      "foaf:homepage": {
+        "@id": "http://www.asahi-net.or.jp/~ax2s-kmtn/"
+      },
+      "foaf:name": "Shuji Kamitsuna"
+    },
+    {
+      "@id": "_:Nb34241a30406470d8bd153a50d86368e",
+      "foaf:homepage": {
+        "@id": "http://okfn.org"
+      },
+      "foaf:name": "Open Knowledge Foundation"
+    },
+    {
+      "@id": "_:N290981ec5a5044de8f2fa5ef8be835ca",
+      "foaf:name": "John Erickson"
+    },
+    {
+      "@id": "_:N68e521e36dc54b0eb01af3a25e4bb67f",
+      "foaf:homepage": {
+        "@id": "http://ec.europa.eu/dgs/informatics/"
+      },
+      "foaf:name": "European Commission, DG DIGIT"
+    },
+    {
+      "@id": "dcat:Catalog",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "ar",
+          "@value": "مجموعة من توصيفات قوائم البيانات"
+        },
+        {
+          "@language": "ja",
+          "@value": "データ・カタログは、データセットに関するキュレートされたメタデータの集合です。"
+        },
+        {
+          "@language": "es",
+          "@value": "Una colección conservada de metadatos de conjuntos de datos"
+        },
+        {
+          "@language": "fr",
+          "@value": "Une collection élaborée de métadonnées sur les jeux de données"
+        },
+        {
+          "@language": "el",
+          "@value": "Μια επιμελημένη συλλογή μεταδεδομένων περί συνόλων δεδομένων"
+        },
+        {
+          "@language": "en",
+          "@value": "A curated collection of metadata about datasets"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/vocab-dcat/"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Catalog"
+        },
+        {
+          "@language": "es",
+          "@value": "Catálogo"
+        },
+        {
+          "@language": "fr",
+          "@value": "Catalogue"
+        },
+        {
+          "@language": "el",
+          "@value": "Κατάλογος"
+        },
+        {
+          "@language": "ja",
+          "@value": "カタログ"
+        },
+        {
+          "@language": "ar",
+          "@value": "فهرس قوائم البيانات"
+        }
+      ],
+      "vann:usageNote": [
+        {
+          "@language": "ja",
+          "@value": "通常、ウェブ・ベースのデータ・カタログは、このクラスの1つのインスタンスとして表わされます。"
+        },
+        {
+          "@language": "es",
+          "@value": "Normalmente, un catálogo de datos basado en web es representado como una sola instancia de esta clase."
+        },
+        {
+          "@language": "en",
+          "@value": "Typically, a web-based data catalog is represented as a single instance of this class."
+        },
+        {
+          "@language": "el",
+          "@value": "Συνήθως, ένας κατάλογος δεδομένων στον Παγκόσμιο Ιστό αναπαρίσταται ως ένα στιγμιότυπο αυτής της κλάσης."
+        }
+      ]
+    },
+    {
+      "@id": "dcat:Distribution",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "ja",
+          "@value": "データセットの特定の利用可能な形式を表わします。各データセットは、異なる形式で利用できることがあり、これらの形式は、データセットの異なる形式や、異なるエンドポイントを表わす可能性があります。配信の例には、ダウンロード可能なCSVファイル、API、RSSフィードが含まれます。"
+        },
+        {
+          "@language": "ar",
+          "@value": "شكل محدد لقائمة البيانات يمكن الوصول إليه. قائمة بيانات ما يمكن أن تكون متاحه باشكال و أنواع متعددة.  ملف يمكن تحميله أو واجهة برمجية يمكن من خلالها الوصول إلى البيانات هي أمثلة على ذلك."
+        },
+        {
+          "@language": "fr",
+          "@value": "Représente une forme spécifique d'un jeu de données. Caque jeu de données peut être disponible\n\t\t\t\t\tsous différentes formes, celles-ci pouvant représenter différents formats du jeu de données ou différents endpoint. Des exemples de distribution\n\t\t\t\t\tsont des fichirs CSV, des API ou des flux RSS."
+        },
+        {
+          "@language": "en",
+          "@value": "Represents a specific available form of a dataset. Each dataset might be available in \n          different forms, these forms might represent different formats of the dataset or different \n          endpoints. Examples of distributions include a downloadable CSV file, an API or an RSS feed"
+        },
+        {
+          "@language": "es",
+          "@value": "Representa una forma disponible y específica a un conjunto de datos. Cada conjunto de datos puede estar disponible en\n          formas diferentes, estas formas pueden representar formatos diferentes del conjunto de datos o puntos de acceso diferentes."
+        },
+        {
+          "@language": "el",
+          "@value": "Αναπαριστά μία συγκεκριμένη διαθέσιμη μορφή ενός συνόλου δεδομένων. Κάθε σύνολο δεδομενων μπορεί να είναι διαθέσιμο σε \n\t\t\t\t\tδιαφορετικές μορφές, οι μορφές αυτές μπορεί να αναπαριστούν διαφορετικές μορφές αρχείων ή διαφορετικά σημεία διάθεσης.\n\t\t\t\t\tΠαραδείγματα διανομών συμπεριλαμβάνουν ένα μεταφορτώσιμο αρχείο μορφής CSV, ένα API ή ένα RSS feed."
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/vocab-dcat/"
+      },
+      "rdfs:label": [
+        {
+          "@language": "es",
+          "@value": "Distribución"
+        },
+        {
+          "@language": "en",
+          "@value": "Distribution"
+        },
+        {
+          "@language": "el",
+          "@value": "Διανομή"
+        },
+        {
+          "@language": "ar",
+          "@value": "التوزيع"
+        },
+        {
+          "@language": "ja",
+          "@value": "配信"
+        },
+        {
+          "@language": "fr",
+          "@value": "Distribution"
+        }
+      ],
+      "vann:usageNote": [
+        {
+          "@language": "el",
+          "@value": "Αυτό αναπαριστά μία γενική διαθεσιμότητα ενός συνόλου δεδομένων και δεν υπονοεί τίποτα περί του πραγματικού τρόπου πρόσβασης στα δεδομένα, αν είναι άμεσα μεταφορτώσιμα,\n\t\t\t\t\t  μέσω API ή μέσω μίας ιστοσελίδας. Η χρήση της ιδιότητας dcat:downloadURL δείχνει μόνο άμεσα μεταφορτώσιμες διανομές."
+        },
+        {
+          "@language": "es",
+          "@value": "Esto representa una disponibilidad general de un conjunto de datos, e implica que no existe información acerca \n          del método de acceso real a los datos, i.e., si es un enlace de descarga directa o a través de una página Web."
+        },
+        {
+          "@language": "fr",
+          "@value": "Ceci représente une disponibilité générale du jeu de données, et implique qu'il n'existe pas d'information\n\t\t\t\t\tsur la méthode d'accès réelle des données, par exple, si c'est un lien de téléchargement direct ou à travers une page Web. "
+        },
+        {
+          "@language": "en",
+          "@value": "This represents a general availability of a dataset it implies no information about the \n          actual access method of the data, i.e. whether it is a direct download, API, or some \n          through Web page. The use of dcat:downloadURL property indicates directly downloadable distributions."
+        },
+        {
+          "@language": "ja",
+          "@value": "これは、データセットの一般的な利用可能性を表わし、データの実際のアクセス方式に関する情報（つまり、直接ダウンロードなのか、APIなのか、ウェブページを介したものなのか）を意味しません。dcat:downloadURLプロパティーの使用は、直接ダウンロード可能な配信を意味します。"
+        }
+      ]
+    },
+    {
+      "@id": "_:Nef56f167f56b40dbbcba2695ae4fe5c6",
+      "foaf:name": "Ghislain Auguste Atemezing",
+      "rdfs:seeAlso": {
+        "@id": "http://www.eurecom.fr/~atemezin/gatemezing-foaf.rdf"
+      }
+    },
+    {
+      "@id": "dcat:distribution",
+      "@type": [
+        "owl:ObjectProperty",
+        "rdf:Property"
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "es",
+          "@value": "Conecta un conjunto de datos a una de sus distribuciones disponibles"
+        },
+        {
+          "@language": "ja",
+          "@value": "データセットを、その利用可能な配信に接続します。"
+        },
+        {
+          "@language": "en",
+          "@value": "Connects a dataset to one of its available distributions."
+        },
+        {
+          "@language": "ar",
+          "@value": "تربط قائمة البيانات بطريقة أو بشكل يسمح  الوصول الى البيانات"
+        },
+        {
+          "@language": "fr",
+          "@value": "Connecte un jeu de données à des distributions disponibles."
+        },
+        {
+          "@language": "el",
+          "@value": "Συνδέει ένα σύνολο δεδομένων με μία από τις διαθέσιμες διανομές του."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "dcat:Dataset"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/vocab-dcat/"
+      },
+      "rdfs:label": [
+        {
+          "@language": "ar",
+          "@value": "توزيع"
+        },
+        {
+          "@language": "es",
+          "@value": "distribución"
+        },
+        {
+          "@language": "en",
+          "@value": "distribution"
+        },
+        {
+          "@language": "el",
+          "@value": "διανομή"
+        },
+        {
+          "@language": "fr",
+          "@value": "distribution"
+        },
+        {
+          "@language": "ja",
+          "@value": "データセット配信"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "dcat:Distribution"
+      }
+    },
+    {
+      "@id": "dcat:record",
+      "@type": [
+        "owl:ObjectProperty",
+        "rdf:Property"
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Links a catalog to its records."
+        },
+        {
+          "@language": "es",
+          "@value": "Enlaza un catálogo a sus registros."
+        },
+        {
+          "@language": "el",
+          "@value": "Συνδέει έναν κατάλογο με τις καταγραφές του."
+        },
+        {
+          "@language": "ja",
+          "@value": "カタログの一部であるカタログ・レコード。"
+        },
+        {
+          "@language": "ar",
+          "@value": "تربط الفهرس بسجل ضمنه"
+        },
+        {
+          "@language": "fr",
+          "@value": "Relie un catalogue à ses registres"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "dcat:Catalog"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/vocab-dcat/"
+      },
+      "rdfs:label": [
+        {
+          "@language": "el",
+          "@value": "καταγραφή"
+        },
+        {
+          "@language": "ja",
+          "@value": "カタログ・レコード"
+        },
+        {
+          "@language": "en",
+          "@value": "record"
+        },
+        {
+          "@language": "es",
+          "@value": "registro"
+        },
+        {
+          "@language": "fr",
+          "@value": "registre"
+        },
+        {
+          "@language": "ar",
+          "@value": "سجل"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "dcat:CatalogRecord"
+      }
+    },
+    {
+      "@id": "dcat:dataDictionary",
+      "@type": "rdf:Property",
+      "owl:deprecated": true,
+      "rdfs:comment": "links a dataset to a dictionary that helps interpreting the data. This term has been deprecated",
+      "rdfs:domain": {
+        "@id": "dcat:Dataset"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "dcat:"
+      },
+      "rdfs:label": "data dictionary (Deprecated)"
+    },
+    {
+      "@id": "dcat:dataQuality",
+      "@type": "rdf:Property",
+      "owl:deprecated": true,
+      "rdfs:comment": "describes the quality of data e.g. precision. This should not be used to describe the data collection characteristics, other more specialized statistical properties can be used instead. This term has been deprecated",
+      "rdfs:domain": {
+        "@id": "dcat:Dataset"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "dcat:"
+      },
+      "rdfs:label": "data quality (Deprecated)"
+    },
+    {
+      "@id": "_:N8902a8276e2247afabfd30d479f5ef38",
+      "foaf:name": "Marios Meimaris"
+    },
+    {
+      "@id": "_:Ne5279b3cbfad4f4696ff3c48be1ff488",
+      "foaf:name": "Vassilios Peristeras",
+      "schema:affiliation": {
+        "@id": "_:N68e521e36dc54b0eb01af3a25e4bb67f"
+      }
+    },
+    {
+      "@id": "dcat:downloadURL",
+      "@type": [
+        "owl:ObjectProperty",
+        "rdf:Property"
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fr",
+          "@value": "Ceci est un lien direct à un fichier téléchargeable en un format donnée. Exple fichier CSV ou RDF. Le format\n\t\t\t\t\test décrit par les propriétés de distribution dc:format et/ou dcat:mediaType"
+        },
+        {
+          "@language": "ja",
+          "@value": "dcat:downloadURLはdcat:accessURLの特定の形式です。しかし、DCATプロファイルが非ダウンロード・ロケーションに対してのみaccessURLを用いる場合には、より強い分離を課すことを望む可能性があるため、この含意を強化しないように、DCATは、dcat:downloadURLをdcat:accessURLのサブプロパティーであると定義しません。"
+        },
+        {
+          "@language": "ar",
+          "@value": "رابط مباشر لملف يمكن تحميله. نوع الملف يتم توصيفه باستخدام الخاصية dc:format dcat:mediaType "
+        },
+        {
+          "@language": "el",
+          "@value": "Είναι ένας σύνδεσμος άμεσης μεταφόρτωσης ενός αρχείου σε μια δεδομένη μορφή. Π.χ. ένα αρχείο CSV ή RDF. \n\t\t\t\t\tΗ μορφη αρχείου περιγράφεται από τις ιδιότητες dc:format ή/και dcat:mediaType της διανομής"
+        },
+        {
+          "@language": "es",
+          "@value": "Este es un enlace directo a un fichero descargable en un formato dado, e.g., fichero CSV o RDF. El \n          formato es descrito por las propiedades de la distribución dc:format y/o dcat:mediaType"
+        },
+        {
+          "@language": "en",
+          "@value": "This is a direct link to a downloadable file in a given format. E.g. CSV file or RDF file. The \n          format is described by the distribution's dc:format and/or dcat:mediaType"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "dcat:Distribution"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/vocab-dcat/"
+      },
+      "rdfs:label": [
+        {
+          "@language": "ar",
+          "@value": "رابط تحميل"
+        },
+        {
+          "@language": "el",
+          "@value": "URL μεταφόρτωσης"
+        },
+        {
+          "@language": "fr",
+          "@value": "URL de téléchargement"
+        },
+        {
+          "@language": "ja",
+          "@value": "ダウンロードURL"
+        },
+        {
+          "@language": "es",
+          "@value": "URL de descarga"
+        },
+        {
+          "@language": "en",
+          "@value": "download URL"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Resource"
+      },
+      "vann:usageNote": [
+        {
+          "@language": "fr",
+          "@value": "La valeur est une URL."
+        },
+        {
+          "@language": "en",
+          "@value": "The value is a URL."
+        },
+        {
+          "@language": "es",
+          "@value": "TEl valor es una URL."
+        },
+        {
+          "@language": "el",
+          "@value": "Η τιμή είναι ένα URL."
+        }
+      ]
+    },
+    {
+      "@id": "dcat:Dataset",
+      "@type": [
+        "owl:Class",
+        "rdfs:Class"
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "ja",
+          "@value": "1つのエージェントによって公開またはキュレートされ、1つ以上の形式でアクセスまたはダウンロードできるデータの集合。"
+        },
+        {
+          "@language": "en",
+          "@value": "A collection of data, published or curated by a single source, and available for access or download in one or more formats"
+        },
+        {
+          "@language": "el",
+          "@value": "Μία συλλογή από δεδομένα, δημοσιευμένη ή επιμελημένη από μία και μόνο πηγή, διαθέσιμη δε προς πρόσβαση ή μεταφόρτωση σε μία ή περισσότερες μορφές"
+        },
+        {
+          "@language": "ar",
+          "@value": "قائمة بيانات منشورة أو مجموعة من قبل مصدر ما و متاح الوصول إليها أو تحميلها"
+        },
+        {
+          "@language": "fr",
+          "@value": "Une collection de données, publiée ou élaborée par une seule source, et disponible pour accès ou téléchargement dans un ou plusieurs formats"
+        },
+        {
+          "@language": "es",
+          "@value": "Una colección de datos, publicados o conservados por una única fuente, y disponibles para acceder o descagar en uno o más formatos"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/vocab-dcat/"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Dataset"
+        },
+        {
+          "@language": "ar",
+          "@value": "قائمة بيانات"
+        },
+        {
+          "@language": "es",
+          "@value": "Conjunto de datos"
+        },
+        {
+          "@language": "fr",
+          "@value": "Jeu de données"
+        },
+        {
+          "@language": "ja",
+          "@value": "データセット"
+        },
+        {
+          "@language": "el",
+          "@value": "Σύνολο Δεδομένων"
+        }
+      ],
+      "rdfs:subClassOf": {
+        "@id": "dctype:Dataset"
+      },
+      "vann:usageNote": [
+        {
+          "@language": "el",
+          "@value": "Η κλάση αυτή αναπαριστά το σύνολο δεδομένων αυτό καθ'εαυτό, όπως έχει δημοσιευθεί από τον εκδότη.\n          Σε περιπτώσεις όπου είναι απαραίτητος ο διαχωρισμός μεταξύ του συνόλου δεδομένων και της καταγραφής αυτού στον κατάλογο (γιατί μεταδεδομένα όπως η ημερομηνία αλλαγής και ο συντηρητής μπορεί να διαφέρουν) \n          η κλάση της καταγραφής καταλόγου μπορεί να χρησιμοποιηθεί για το τελευταίο."
+        },
+        {
+          "@language": "ja",
+          "@value": "このクラスは、データセットの公開者が公開する実際のデータセットを表わします。カタログ内の実際のデータセットとそのエントリーとの区別が必要な場合（修正日と維持者などのメタデータが異なるかもしれないので）は、後者にcatalog recordというクラスを使用できます。"
+        },
+        {
+          "@language": "fr",
+          "@value": "Cette classe représente le jeu de données publié par le fournisseur de données. Dans les cas où une distinction est nécessaire entre le jeu de donénes et son \n\t\t\t\t\t  entrée dans le catalogue, la classe registre de données peut être utilisée pour ce dernier. "
+        },
+        {
+          "@language": "es",
+          "@value": "Esta clase representa el conjunto de datos publicado por el editor del conjunto de datos. En los casos donde es necesaria una distinción entre el\n\t\t\t\t\tconjunto de datos y su entrada en el catálogo de datos"
+        },
+        {
+          "@language": "en",
+          "@value": "This class represents the actual dataset as published by the dataset publisher. In \n          cases where a distinction between the actual dataset and its entry in the catalog is \n          necessary (because metadata such as modification date and maintainer might differ), the \n          catalog record class can be used for the latter."
+        }
+      ]
+    },
+    {
+      "@id": "dcat:theme",
+      "@type": [
+        "owl:ObjectProperty",
+        "rdf:Property"
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fr",
+          "@value": "La catégorie principale du jeu de données. Un jeu de données peut avoir plusieurs thèmes."
+        },
+        {
+          "@language": "es",
+          "@value": "La categoría principal del conjunto de datos. Un conjunto de datos puede tener varios temas."
+        },
+        {
+          "@language": "el",
+          "@value": "Η κύρια κατηγορία του συνόλου δεδομένων. Ένα σύνολο δεδομένων δύναται να έχει πολλαπλά θέματα."
+        },
+        {
+          "@language": "ar",
+          "@value": "التصنيف الرئيسي لقائمة البيانات. قائمة البيانات يمكن أن تملك أكثر من تصنيف رئيسي واحد."
+        },
+        {
+          "@language": "en",
+          "@value": "The main category of the dataset. A dataset can have multiple themes."
+        },
+        {
+          "@language": "ja",
+          "@value": "データセットの主要カテゴリー。データセットは複数のテーマを持つことができます。"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "dcat:Dataset"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/vocab-dcat/"
+      },
+      "rdfs:label": [
+        {
+          "@language": "es",
+          "@value": "tema"
+        },
+        {
+          "@language": "el",
+          "@value": "Θέμα"
+        },
+        {
+          "@language": "ja",
+          "@value": "テーマ/カテゴリー"
+        },
+        {
+          "@language": "en",
+          "@value": "theme"
+        },
+        {
+          "@language": "fr",
+          "@value": "thème"
+        },
+        {
+          "@language": "ar",
+          "@value": "التصنيف"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "skos:Concept"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "dcterms:subject"
+      },
+      "vann:usageNote": [
+        {
+          "@language": "fr",
+          "@value": "Un ensemble de skos:Concepts utilisés pour catégoriser un jeu de données sont organisés en \n\t\t\t\t\t\tun skos:ConceptScheme décrivqnt toutes les catégories et ses relations dans le catalogue. "
+        },
+        {
+          "@language": "es",
+          "@value": "El conjunto de skos:Concepts utilizados para categorizar el conjunto de datos están organizados en\n          un skos:ConceptScheme que describe todas las categorías y sus relaciones en el catálogo"
+        },
+        {
+          "@language": "ja",
+          "@value": "データセットを分類するために用いられるskos:Conceptの集合は、カタログのすべてのカテゴリーとそれらの関係を記述しているskos:ConceptSchemeで組織化されます。"
+        },
+        {
+          "@language": "el",
+          "@value": "Το σετ των skos:Concepts που χρησιμοποιείται για να κατηγοριοποιήσει τα σύνολα δεδομένων είναι οργανωμένο εντός \n          ενός skos:ConceptScheme που περιγράφει όλες τις κατηγορίες και τις σχέσεις αυτών στον κατάλογο."
+        },
+        {
+          "@language": "en",
+          "@value": "The set of skos:Concepts used to categorize the datasets are organized in \n          a skos:ConceptScheme describing all the categories and their relations in the catalog."
+        }
+      ]
+    },
+    {
+      "@id": "dcat:bytes",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "owl:deprecated": true,
+      "rdfs:comment": "describe size of resource in bytes. This term has been deprecated",
+      "rdfs:domain": {
+        "@id": "dcat:Distribution"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "dcat:"
+      },
+      "rdfs:label": "size in bytes (Deprecated)",
+      "rdfs:range": {
+        "@id": "xsd:integer"
+      }
+    },
+    {
+      "@id": "dcat:Download",
+      "@type": [
+        "owl:Class",
+        "rdfs:Class"
+      ],
+      "owl:deprecated": true,
+      "rdfs:comment": "represents a downloadable distribution of a dataset. This term has been deprecated",
+      "rdfs:isDefinedBy": {
+        "@id": "dcat:"
+      },
+      "rdfs:label": "Download (Deprecated)",
+      "rdfs:subClassOf": {
+        "@id": "dcat:Distribution"
+      }
+    },
+    {
+      "@id": "_:Na4f698fcaa7942b290f685f62fd62ccc",
+      "foaf:homepage": {
+        "@id": "http://www.w3.org/2011/gld/"
+      },
+      "foaf:name": "Government Linked Data WG"
+    },
+    {
+      "@id": "dcat:granularity",
+      "@type": "rdf:Property",
+      "owl:deprecated": true,
+      "rdfs:comment": "describes the level of granularity of data in a dataset. The granularity can be in time, place etc. This term has been deprecated",
+      "rdfs:domain": {
+        "@id": "dcat:Dataset"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "dcat:"
+      },
+      "rdfs:label": "granularity (Deprecated)"
+    },
+    {
+      "@id": "dcat:dataset",
+      "@type": [
+        "owl:ObjectProperty",
+        "rdf:Property"
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "Links a catalog to a dataset that is part of the catalog."
+        },
+        {
+          "@language": "es",
+          "@value": "Enlaza un catálogo a un conjunto de datos que es parte de ese catálogo"
+        },
+        {
+          "@language": "ar",
+          "@value": "تربط الفهرس بقائمة بيانات ضمنه"
+        },
+        {
+          "@language": "fr",
+          "@value": "Relie un catalogue à un jeu de données faisant partie de ce catalogue"
+        },
+        {
+          "@language": "el",
+          "@value": "Συνδέει έναν κατάλογο με ένα σύνολο δεδομένων το οποίο ανήκει στον εν λόγω κατάλογο."
+        },
+        {
+          "@language": "ja",
+          "@value": "カタログの一部であるデータセット。"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "dcat:Catalog"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/vocab-dcat/"
+      },
+      "rdfs:label": [
+        {
+          "@language": "el",
+          "@value": "σύνολο δεδομένων"
+        },
+        {
+          "@language": "ar",
+          "@value": "قائمة بيانات"
+        },
+        {
+          "@language": "en",
+          "@value": "dataset"
+        },
+        {
+          "@language": "fr",
+          "@value": "jeu de données"
+        },
+        {
+          "@language": "ja",
+          "@value": "データセット"
+        },
+        {
+          "@language": "es",
+          "@value": "conjunto de datos"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "dcat:Dataset"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "dcterms:hasPart"
+      }
+    },
+    {
+      "@id": "dcat:contactPoint",
+      "@type": [
+        "owl:ObjectProperty",
+        "rdf:Property"
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "es",
+          "@value": "Enlaza un conjunto de datos a información de contacto relevante utilizando VCard"
+        },
+        {
+          "@language": "fr",
+          "@value": "Relie un jeu de données à une information de contact utile en utilisant VCard."
+        },
+        {
+          "@language": "en",
+          "@value": "Links a dataset to relevant contact information which is provided using VCard."
+        },
+        {
+          "@language": "ja",
+          "@value": "データセットを、VCardを用いて提供されている適切な連絡先情報にリンクします。"
+        },
+        {
+          "@language": "ar",
+          "@value": "تربط قائمة البيانات بعنوان اتصال موصف  باستخدام VCard"
+        },
+        {
+          "@language": "el",
+          "@value": "Συνδέει ένα σύνολο δεδομένων με ένα σχετικό σημείο επικοινωνίας, μέσω VCard."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "dcat:Dataset"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/vocab-dcat/"
+      },
+      "rdfs:label": [
+        {
+          "@language": "es",
+          "@value": "punto de contacto"
+        },
+        {
+          "@language": "en",
+          "@value": "contact point"
+        },
+        {
+          "@language": "ja",
+          "@value": "窓口"
+        },
+        {
+          "@language": "el",
+          "@value": "σημείο επικοινωνίας"
+        },
+        {
+          "@language": "ar",
+          "@value": "عنوان اتصال"
+        },
+        {
+          "@language": "fr",
+          "@value": "point de contact"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "vcard:Kind"
+      }
+    },
+    {
+      "@id": "dcat:mediaType",
+      "@type": [
+        "owl:ObjectProperty",
+        "rdf:Property"
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "ja",
+          "@value": "このプロパティーは、配信のメディア・タイプがIANAで定義されているときに使用すべきで（SHOULD）、そうでない場合には、dct:formatを様々な値と共に使用できます（MAY）。"
+        },
+        {
+          "@language": "fr",
+          "@value": "Cette propriété doit être utilisée quand c'est définit le type de média de la distribution\n\t\t\t\t\ten IANA, sinon dct:format DOIT être utilisé avec différentes valeurs."
+        },
+        {
+          "@language": "ar",
+          "@value": "يجب استخدام هذه الخاصية إذا كان نوع الملف معرف ضمن IANA"
+        },
+        {
+          "@language": "el",
+          "@value": "Η ιδιότητα αυτή ΘΑ ΠΡΕΠΕΙ να χρησιμοποιείται όταν ο τύπος μέσου μίας διανομής είναι ορισμένος στο IANA, αλλιώς \n          η ιδιότητα dct:format ΔΥΝΑΤΑΙ να χρησιμοποιηθεί με διαφορετικές τιμές."
+        },
+        {
+          "@language": "es",
+          "@value": "Esta propiedad debe ser usada cuando está definido el tipo de media de la distribución \n\t\t\t\t\ten IANA, de otra manera dct:format puede ser utilizado con diferentes valores"
+        },
+        {
+          "@language": "en",
+          "@value": "This property SHOULD be used when the media type of the distribution is defined \n          in IANA, otherwise dct:format MAY be used with different values."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "dcat:Distribution"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/vocab-dcat/"
+      },
+      "rdfs:label": [
+        {
+          "@language": "ar",
+          "@value": "نوع الميديا"
+        },
+        {
+          "@language": "es",
+          "@value": "tipo de media"
+        },
+        {
+          "@language": "ja",
+          "@value": "メディア・タイプ"
+        },
+        {
+          "@language": "fr",
+          "@value": "type de média"
+        },
+        {
+          "@language": "el",
+          "@value": "τύπος μέσου"
+        },
+        {
+          "@language": "en",
+          "@value": "media type"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "dcterms:MediaTypeOrExtent"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "dcterms:format"
+      }
+    },
+    {
+      "@id": "dcat:WebService",
+      "@type": [
+        "rdfs:Class",
+        "owl:Class"
+      ],
+      "owl:deprecated": true,
+      "rdfs:comment": "represents a web service that enables access to the data of a dataset. This term has been deprecated",
+      "rdfs:isDefinedBy": {
+        "@id": "dcat:"
+      },
+      "rdfs:label": "Web Service (Deprecated)",
+      "rdfs:subClassOf": {
+        "@id": "dcat:Distribution"
+      }
+    },
+    {
+      "@id": "dcat:CatalogRecord",
+      "@type": [
+        "owl:Class",
+        "rdfs:Class"
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "en",
+          "@value": "A record in a data catalog, describing a single dataset."
+        },
+        {
+          "@language": "el",
+          "@value": "Μία καταγραφή ενός καταλόγου, η οποία περιγράφει ένα συγκεκριμένο σύνολο δεδομένων."
+        },
+        {
+          "@language": "ja",
+          "@value": "1つのデータセットを記述したデータ・カタログ内のレコード。"
+        },
+        {
+          "@language": "es",
+          "@value": "Un registro en un catálogo de datos que describe un solo conjunto de datos."
+        },
+        {
+          "@language": "fr",
+          "@value": "Un registre du catalogue ou une entrée du catalogue, décrivant un seul jeu de données"
+        }
+      ],
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/vocab-dcat/"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "Catalog Record"
+        },
+        {
+          "@language": "ja",
+          "@value": "カタログ・レコード"
+        },
+        {
+          "@language": "el",
+          "@value": "Καταγραφή καταλόγου"
+        },
+        {
+          "@language": "fr",
+          "@value": "Registre du catalogue"
+        },
+        {
+          "@language": "es",
+          "@value": "Registro de catálogo"
+        },
+        {
+          "@language": "ar",
+          "@value": "سجل"
+        }
+      ],
+      "vann:usageNote": [
+        {
+          "@language": "en",
+          "@value": "This class is optional and not all catalogs will use it. It exists for \n            catalogs where a distinction is made between metadata about a dataset and \n            metadata about the dataset's entry in the catalog. For example, the publication \n            date property of the dataset reflects the date when the information was originally \n            made available by the publishing agency, while the publication date of the catalog \n            record is the date when the dataset was added to the catalog. In cases where both\n            dates differ, or where only the latter is known, the publication date should only \n            be specified for the catalog record. Notice that the W3C PROV Ontology allows \n            describing further provenance information such as the details of the process and the \n            agent involved in a particular change to a dataset."
+        },
+        {
+          "@language": "es",
+          "@value": "Esta clase es opcional y no todos los catálogos la utilizarán. Esta clase existe para catálogos\n\t\t\t\t\t\tque hacen una distinción entre los metadatos acerca de un conjunto de datos y los metadatos\n\t\t\t\t\t\tacerca de una entrada en ese conjunto de datos en el catálogo. "
+        },
+        {
+          "@language": "ja",
+          "@value": "このクラスはオプションで、すべてのカタログがそれを用いるとは限りません。これは、データセットに関するメタデータとカタログ内のデータセットのエントリーに関するメタデータとで区別が行われるカタログのために存在しています。例えば、データセットの公開日プロパティーは、公開機関が情報を最初に利用可能とした日付を示しますが、カタログ・レコードの公開日は、データセットがカタログに追加された日付です。両方の日付が異っていたり、後者だけが分かっている場合は、カタログ・レコードに対してのみ公開日を指定すべきです。W3CのPROVオントロジー[prov-o]を用いれば、データセットに対する特定の変更に関連するプロセスやエージェントの詳細などの、さらに詳しい来歴情報の記述が可能となることに注意してください。"
+        },
+        {
+          "@language": "fr",
+          "@value": "C'est une classe facultative et tous les catalogues ne l'utiliseront pas. Cette classe existe pour les catalogues\n\t\t\t\t\t\tayant une distinction entre les métadonnées sur le jeu de données et les métadonnées sur une entrée du jeu de données dans le catalogue. "
+        },
+        {
+          "@language": "el",
+          "@value": "Αυτή η κλάση είναι προαιρετική και δεν χρησιμοποιείται από όλους τους καταλόγους. Υπάρχει για τις περιπτώσεις καταλόγων όπου \n\t\t\t\t\t  γίνεται διαχωρισμός μεταξύ των μεταδεδομένων για το σύνολο των δεδομένων και των μεταδεδομένων για την καταγραφή του συνόλου δεδομένων εντός του καταλόγου.\n\t\t\t\t\t  Για παράδειγμα, η ιδιότητα της ημερομηνίας δημοσίευσης του συνόλου δεδομένων δείχνει την ημερομηνία κατά την οποία οι πληροφορίες έγιναν διαθέσιμες από τον φορέα δημοσίευσης, \n\t\t\t\t\t  ενώ η ημερομηνία δημοσίευσης της καταγραφής του καταλόγου δείχνει την ημερομηνία που το σύνολο δεδομένων προστέθηκε στον κατάλογο.\n\t\t\t\t\t  Σε περιπτώσεις που οι δύο ημερομηνίες διαφέρουν, ή που μόνο η τελευταία είναι γνωστή, η ημερομηνία δημοσίευσης θα πρέπει να δίνεται για την καταγραφή του καταλόγου. \n\t\t\t\t\t  Να σημειωθεί πως η οντολογία W3C PROV επιτρέπει την περιγραφή επιπλέον πληροφοριών ιστορικού όπως λεπτομέρειες για τη διαδικασία και τον δράστη που εμπλέκονται σε μία συγκεκριμένη αλλαγή εντός του συνόλου δεδομένων."
+        }
+      ]
+    },
+    {
+      "@id": "http://www.w3.org/ns/dcat",
+      "@type": [
+        "voaf:Vocabulary",
+        "owl:Ontology"
+      ],
+      "dcterms:contributor": [
+        {
+          "@id": "_:N46ad9935478e4771b3d00a0c4131c57b"
+        },
+        {
+          "@id": "_:Ne8259a1aad17468e9e1b9d03e478ecc9"
+        },
+        {
+          "@id": "_:Nba1c07f472f9425aa2ac21ec25e12934"
+        },
+        {
+          "@id": "_:Ne2d4012a15dd4078bd16dc4163be06c2"
+        },
+        {
+          "@id": "_:Ne5279b3cbfad4f4696ff3c48be1ff488"
+        },
+        {
+          "@id": "_:N72a1aeca163045cda0573c3311de981e"
+        },
+        {
+          "@id": "_:N8902a8276e2247afabfd30d479f5ef38"
+        },
+        {
+          "@id": "_:Nef56f167f56b40dbbcba2695ae4fe5c6"
+        },
+        {
+          "@id": "_:Nbc9fd44ecece40bf83ce32fc4d47a91f"
+        },
+        {
+          "@id": "_:N5d9de3ef62ed4168b0ed0b742974f8d7"
+        }
+      ],
+      "dcterms:creator": [
+        {
+          "@id": "_:N290981ec5a5044de8f2fa5ef8be835ca"
+        },
+        {
+          "@id": "_:N64ebe5ba901a47a687e3b5c343b8af17"
+        }
+      ],
+      "dcterms:modified": [
+        {
+          "@type": "xsd:date",
+          "@value": "2013-09-20"
+        },
+        {
+          "@type": "xsd:date",
+          "@value": "2012-04-24"
+        },
+        {
+          "@type": "xsd:date",
+          "@value": "2013-11-28"
+        }
+      ],
+      "foaf:maker": {
+        "@id": "_:Na4f698fcaa7942b290f685f62fd62ccc"
+      },
+      "rdfs:comment": [
+        {
+          "@language": "fr",
+          "@value": "DCAT est un vocabulaire développé pour faciliter l'interopérabilité entre les jeux de données publiées sur le Web.\n\t\t\t\tEn utilisant DCAT pour décrire les jeux de données dans les catalogues de données, les fournisseurs de données augmentent leur découverte et permettent\n\t\t\t\tque les applications facilement les métadonnées de plusieurs catalogues. Il permet en plus la publication décentralisée des catalogues et facilitent\n\t\t\t\tla recherche fédérée des données entre plusieurs sites. Les métadonnées DCAT aggrégées peuvent servir comme un manifeste pour faciliter la préservation digitale des ressources.\n\t\t\t\tDCAT est définie à l'adresse http://www.w3.org/TR/vocab-dcat/. Une quelconque version de ce document normatif et ce vocabulaire est une erreur dans ce vocabulaire"
+        },
+        {
+          "@language": "en",
+          "@value": "DCAT is an RDF vocabulary designed to facilitate interoperability between data catalogs published on the Web.\n          By using DCAT to describe datasets in data catalogs, publishers increase discoverability and enable \n          applications easily to consume metadata from multiple catalogs. It further enables decentralized \n          publishing of catalogs and facilitates federated dataset search across sites. Aggregated DCAT metadata can \n          serve as a manifest file to facilitate digital preservation.\n          DCAT is defined at http://www.w3.org/TR/vocab-dcat/. Any variance between that normative\n          document and this schema is an error in this schema."
+        },
+        {
+          "@language": "es",
+          "@value": "DCAT es un vocabulario RDF diseñado para facilitar la interoperabilidad entre catálogo de datos publicados en la Web.\n          Gracias a utilizar DCAT para describir conjuntos de datos en los catálogo de datos, los editores aumentan el descubrimiento y permiten\n          que las aplicaciones consuman fácilmente los metadatos de varios catálogos."
+        },
+        {
+          "@language": "ar",
+          "@value": "هي أنطولوجية تسهل تبادل البيانات بين مختلف الفهارس على الوب. استخدام هذه الأنطولوجية يساعد على اكتشاف قوائم  البيانات المنشورة على الوب و يمكن التطبيقات المختلفة من الاستفادة أتوماتيكيا من البيانات المتاحة من مختلف الفهارس."
+        },
+        {
+          "@language": "el",
+          "@value": "Το DCAT είναι ένα RDF λεξιλόγιο που σχεδιάσθηκε για να κάνει εφικτή τη διαλειτουργικότητα μεταξύ καταλόγων δεδομένων στον Παγκόσμιο Ιστό.\n          Χρησιμοποιώντας το DCAT για την περιγραφή συνόλων δεδομένων, οι εκδότες αυτών αυξάνουν την ανακαλυψιμότητα και επιτρέπουν στις εφαρμογές την εύκολη κατανάλωση μεταδεδομένων από πολλαπλούς καταλόγους.\n          Επιπλέον, δίνει τη δυνατότητα για αποκεντρωμένη έκδοση και διάθεση καταλόγων και επιτρέπει δυνατότητες ενοποιημένης αναζήτησης μεταξύ διαφορετικών πηγών.\n          Συγκεντρωτικά μεταδεδομένα που έχουν περιγραφεί με το DCAT μπορούν να χρησιμοποιηθούν σαν ένα δηλωτικό αρχείο (manifest file) ώστε να διευκολύνουν την ψηφιακή συντήρηση."
+        },
+        {
+          "@language": "ja",
+          "@value": "DCATは、ウェブ上で公開されたデータ・カタログ間の相互運用性の促進を目的とするRDFの語彙です。このドキュメントでは、その利用のために、スキーマを定義し、例を提供します。\nデータ・カタログ内のデータセットを記述するためにDCATを用いると、公開者が、発見可能性を増加させ、アプリケーションが複数のカタログのメタデータを容易に利用できるようになります。さらに、カタログの分散公開を可能にし、複数のサイトにまたがるデータセットの統合検索を促進します。集約されたDCATメタデータは、ディジタル保存を促進するためのマニフェスト・ファイルとして使用できます。"
+        }
+      ],
+      "rdfs:label": [
+        {
+          "@language": "es",
+          "@value": "El vocabulario de catálogo de datos"
+        },
+        {
+          "@language": "el",
+          "@value": "Το λεξιλόγιο των καταλόγων δεδομένων"
+        },
+        {
+          "@language": "ar",
+          "@value": "أنطولوجية فهارس قوائم البيانات"
+        },
+        {
+          "@language": "ja",
+          "@value": "データ・カタログ語彙（DCAT）"
+        },
+        {
+          "@language": "en",
+          "@value": "The data catalog vocabulary"
+        },
+        {
+          "@language": "fr",
+          "@value": "Le vocabulaire des jeux de données "
+        }
+      ]
+    },
+    {
+      "@id": "dcat:Feed",
+      "@type": [
+        "owl:Class",
+        "rdfs:Class"
+      ],
+      "owl:deprecated": true,
+      "rdfs:comment": "represents availability of a dataset as a feed. This term has been deprecated",
+      "rdfs:isDefinedBy": {
+        "@id": "dcat:"
+      },
+      "rdfs:label": "Feed (Deprecated)",
+      "rdfs:subClassOf": {
+        "@id": "dcat:Distribution"
+      }
+    },
+    {
+      "@id": "_:Ne2d4012a15dd4078bd16dc4163be06c2",
+      "foaf:homepage": {
+        "@id": "http://makxdekkers.com/"
+      },
+      "foaf:name": "Makx Dekkers",
+      "rdfs:seeAlso": {
+        "@id": "http://makxdekkers.com/makxdekkers.rdf#me"
+      }
+    },
+    {
+      "@id": "_:Nba1c07f472f9425aa2ac21ec25e12934",
+      "foaf:name": "Rufus Pollock",
+      "schema:affiliation": {
+        "@id": "_:Nb34241a30406470d8bd153a50d86368e"
+      }
+    },
+    {
+      "@id": "_:N64ebe5ba901a47a687e3b5c343b8af17",
+      "foaf:name": "Fadi Maali",
+      "rdfs:seeAlso": {
+        "@id": "http://fadmaa.me/foaf.ttl"
+      }
+    },
+    {
+      "@id": "_:N72a1aeca163045cda0573c3311de981e",
+      "foaf:name": "Richard Cyganiak"
+    },
+    {
+      "@id": "_:N46ad9935478e4771b3d00a0c4131c57b",
+      "foaf:homepage": {
+        "@id": "http://www.w3.org/People/all#phila"
+      },
+      "foaf:name": "Phil Archer",
+      "rdfs:seeAlso": {
+        "@id": "http://philarcher.org/foaf.rdf#me"
+      },
+      "schema:affiliation": {
+        "@id": "http://www.w3.org/data#W3C"
+      }
+    },
+    {
+      "@id": "dcat:keyword",
+      "@type": [
+        "rdf:Property",
+        "owl:DatatypeProperty"
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "el",
+          "@value": "Μία λέξη-κλειδί ή μία ετικέτα που περιγράφει το σύνολο δεδομένων."
+        },
+        {
+          "@language": "fr",
+          "@value": "Un mot-clé ou étiquette décrivant un jeu de donnnées."
+        },
+        {
+          "@language": "es",
+          "@value": "Una palabra clave o etiqueta que describa al conjunto de datos."
+        },
+        {
+          "@language": "ar",
+          "@value": "كلمة  مفتاحيه توصف قائمة البيانات"
+        },
+        {
+          "@language": "ja",
+          "@value": "データセットを記述しているキーワードまたはタグ。"
+        },
+        {
+          "@language": "en",
+          "@value": "A keyword or tag describing the dataset."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "dcat:Dataset"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/vocab-dcat/"
+      },
+      "rdfs:label": [
+        {
+          "@language": "en",
+          "@value": "keyword"
+        },
+        {
+          "@language": "el",
+          "@value": "λέξη-κλειδί"
+        },
+        {
+          "@language": "fr",
+          "@value": "mot-clés "
+        },
+        {
+          "@language": "ar",
+          "@value": "كلمة  مفتاحية "
+        },
+        {
+          "@language": "es",
+          "@value": "palabra clave"
+        },
+        {
+          "@language": "ja",
+          "@value": "キーワード/タグ"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Literal"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "dcterms:subject"
+      }
+    },
+    {
+      "@id": "dcat:themeTaxonomy",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "fr",
+          "@value": "Le systhème d'ogranisation de connaissances utilisé pour classifier les jeux de données du catalogue."
+        },
+        {
+          "@language": "en",
+          "@value": "The knowledge organization system (KOS) used to classify catalog's datasets."
+        },
+        {
+          "@language": "el",
+          "@value": "Το σύστημα οργάνωσης γνώσης που χρησιμοποιείται για την κατηγοριοποίηση των συνόλων δεδομένων του καταλόγου."
+        },
+        {
+          "@language": "es",
+          "@value": "El sistema de organización del conocimiento utilizado para clasificar conjuntos de datos de catálogos."
+        },
+        {
+          "@language": "ar",
+          "@value": "لائحة التصنيفات المستخدمه لتصنيف قوائم البيانات ضمن الفهرس"
+        },
+        {
+          "@language": "ja",
+          "@value": "カタログのデータセットを分類するために用いられる知識組織化体系（KOS；knowledge organization system）。"
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "dcat:Catalog"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/vocab-dcat/"
+      },
+      "rdfs:label": [
+        {
+          "@language": "ja",
+          "@value": "テーマ"
+        },
+        {
+          "@language": "en",
+          "@value": "theme taxonomy"
+        },
+        {
+          "@language": "es",
+          "@value": "taxonomía de temas"
+        },
+        {
+          "@language": "el",
+          "@value": "Ταξινομία θεματικών κατηγοριών."
+        },
+        {
+          "@language": "ar",
+          "@value": "قائمة التصنيفات"
+        },
+        {
+          "@language": "fr",
+          "@value": "taxonomie de thèmes"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "skos:ConceptScheme"
+      }
+    },
+    {
+      "@id": "_:Ne8259a1aad17468e9e1b9d03e478ecc9",
+      "foaf:name": "Martin Alvarez-Espinar"
+    },
+    {
+      "@id": "dcat:landingPage",
+      "@type": [
+        "rdf:Property",
+        "owl:ObjectProperty"
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "ar",
+          "@value": "صفحة وب يمكن من خلالها الوصول الى قائمة البيانات أو إلى معلومات إضافية متعلقة بها "
+        },
+        {
+          "@language": "en",
+          "@value": "A Web page that can be navigated to in a Web browser to gain access to the dataset, its distributions and/or additional information."
+        },
+        {
+          "@language": "ja",
+          "@value": "データセット、その配信および（または）追加情報にアクセスするためにウエブ・ブラウザでナビゲートできるウェブページ。"
+        },
+        {
+          "@language": "es",
+          "@value": "Una página Web que puede ser visitada en un explorador Web para tener acceso al conjunto de datos, sus distribuciones y/o información adicional"
+        },
+        {
+          "@language": "el",
+          "@value": "Μία ιστοσελίδα πλοηγίσιμη μέσω ενός φυλλομετρητή (Web browser) που δίνει πρόσβαση στο σύνολο δεδομένων, τις διανομές αυτού ή/και επιπρόσθετες πληροφορίες."
+        },
+        {
+          "@language": "fr",
+          "@value": "Une page Web accessible par un navigateur Web donnant accès au jeu de données, ses distributions et/ou des informations additionnelles."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "dcat:Dataset"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/vocab-dcat/"
+      },
+      "rdfs:label": [
+        {
+          "@language": "ar",
+          "@value": "صفحة وصول"
+        },
+        {
+          "@language": "en",
+          "@value": "landing page"
+        },
+        {
+          "@language": "el",
+          "@value": "ιστοσελίδα αρχικής πρόσβασης"
+        },
+        {
+          "@language": "es",
+          "@value": "página de aterrizaje"
+        },
+        {
+          "@language": "ja",
+          "@value": "ランディング・ページ"
+        },
+        {
+          "@language": "fr",
+          "@value": "page d'atterrissage"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "foaf:Document"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "foaf:Page"
+      },
+      "vann:usageNote": [
+        {
+          "@language": "ja",
+          "@value": "ランディング・ページを通じてしか配信にアクセスできない場合（つまり、直接的なダウンロードURLが不明）には、配信におけるaccessURLとしてランディング・ページのリンクをコピーすべきです（SHOULD）。"
+        },
+        {
+          "@language": "es",
+          "@value": "Si la distribución es accesible solamente través de una página de aterrizaje (i.e., no se conoce una URL de descarga directa),\n          entonces el enlance a la página de aterrizaje debe ser duplicado como accessURL sobre la distribución."
+        },
+        {
+          "@language": "fr",
+          "@value": "Si la distribution est seulement accessible à travers une page d'atterrissage (exple. pas de connaissance d'URLS de téléchargement direct ), alors\n\t\t\t\t\t\tle lien de la page d'atterrissage doit être dupliqué comme accessURL sur la distribution."
+        },
+        {
+          "@language": "el",
+          "@value": "Αν η/οι διανομή/ές είναι προσβάσιμη/ες μόνο μέσω μίας ιστοσελίδας αρχικής πρόσβασης (δηλαδή αν δεν υπάρχουν γνωστές διευθύνσεις άμεσης μεταφόρτωσης), τότε ο σύνδεσμος της ιστοσελίδας αρχικής πρόσβασης πρέπει να αναπαραχθεί ως accessURL σε μία διανομή."
+        },
+        {
+          "@language": "en",
+          "@value": "If the distribution(s) are accessible only through a landing page (i.e. direct download \n          URLs are not known), then the landing page link should be duplicated as accessURL on a distribution."
+        }
+      ]
+    },
+    {
+      "@id": "dcat:accessURL",
+      "@type": [
+        "owl:ObjectProperty",
+        "rdf:Property"
+      ],
+      "rdfs:comment": [
+        {
+          "@language": "es",
+          "@value": "Puede ser cualquier tipo de URL que de acceso a una distribución del conjunto de datos, e.g., página de aterrizaje, descarga,\n\t\t\t\t\tURL feed, punto de acceso SPARQL. Utilizado cuando su catálogo de datos no tiene información sobre donde está o cuando no se puede descargar"
+        },
+        {
+          "@language": "ja",
+          "@value": "データセットの配信にアクセス権を与えるランディング・ページ、フィード、SPARQLエンドポイント、その他の種類の資源。"
+        },
+        {
+          "@language": "ar",
+          "@value": "أي رابط يتيح الوصول إلى البيانات. إذا كان الرابط هو ربط مباشر لملف يمكن تحميله استخدم الخاصية downloadURL"
+        },
+        {
+          "@language": "el",
+          "@value": "Μπορεί να είναι οποιουδήποτε είδους URL που δίνει πρόσβαση στη διανομή ενός συνόλου δεδομένων. Π.χ. ιστοσελίδα αρχικής πρόσβασης, \n          μεταφόρτωση, feed URL, σημείο διάθεσης SPARQL. Να χρησιμοποιείται όταν ο κατάλογος δεν περιέχει πληροφορίες εαν πρόκειται ή όχι για μεταφορτώσιμο αρχείο."
+        },
+        {
+          "@language": "en",
+          "@value": "Could be any kind of URL that gives access to a distribution of the dataset. E.g. landing page, \n          download, feed URL, SPARQL endpoint. Use when your catalog does not have information on which it \n          is or when it is definitely not a download."
+        },
+        {
+          "@language": "fr",
+          "@value": "Ceci peut être tout type d'URL qui donne accès à une distribution du jeu de données. Par exemple, un lien à une page HTML contenant un lien au jeu de données, \n\t\t\t\t\tun Flux RSS, un point d'accès SPARQL. Utilisez le lorsque votre catalogue ne contient pas d'information sur quoi il est ou quand ce n'est pas téléchargeable."
+        }
+      ],
+      "rdfs:domain": {
+        "@id": "dcat:Distribution"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/TR/vocab-dcat/"
+      },
+      "rdfs:label": [
+        {
+          "@language": "es",
+          "@value": "URL de acceso"
+        },
+        {
+          "@language": "el",
+          "@value": "URL πρόσβασης"
+        },
+        {
+          "@language": "en",
+          "@value": "access URL"
+        },
+        {
+          "@language": "fr",
+          "@value": "URL d'accès"
+        },
+        {
+          "@language": "ja",
+          "@value": "アクセスURL"
+        },
+        {
+          "@language": "ar",
+          "@value": "رابط وصول"
+        }
+      ],
+      "rdfs:range": {
+        "@id": "rdfs:Resource"
+      },
+      "vann:usageNote": [
+        {
+          "@language": "ja",
+          "@value": "確実にダウンロードでない場合や、ダウンロードかどうかが不明である場合は、downloadURLではなく、accessURLを用いてください。\nランディング・ページを通じてしか配信にアクセスできない場合（つまり、直接的なダウンロードURLが不明）は、配信におけるaccessURLとしてランディング・ページのリンクをコピーすべきです（SHOULD）。"
+        },
+        {
+          "@language": "es",
+          "@value": "El valor es una URL.\n          Si la distribución es accesible solamente través de una página de aterrizaje (i.e., no se conoce una URL de descarga directa),\n          entonces el enlance a la página de aterrizaje debe ser duplicado como accessURL sobre la distribución."
+        },
+        {
+          "@language": "en",
+          "@value": "The value is a URL.\n          If the distribution(s) are accessible only through a landing page (i.e. direct download URLs are \n          not known), then the landing page link should be duplicated as accessURL on a distribution."
+        },
+        {
+          "@language": "el",
+          "@value": "Η τιμή είναι ένα URL.\n\t\t\t\t\tΑν η/οι διανομή/ές είναι προσβάσιμη/ες μόνο μέσω μίας ιστοσελίδας αρχικής πρόσβασης (δηλαδή αν δεν υπάρχουν γνωστές διευθύνσεις άμεσης μεταφόρτωσης), τότε ο σύνδεσμος της ιστοσελίδας αρχικής πρόσβασης πρέπει να αναπαραχθεί ως accessURL σε μία διανομή."
+        },
+        {
+          "@language": "fr",
+          "@value": "La valeur est une URL.\n\t\t\t\t\t\tSi la distribution est accessible seulement au travers d'une page d'atterrissage (c-à-dire on n'ignore une URL de téléchargement direct) ,\n\t\t\t\t\t\talors le lien à la page d'atterrissage doit être dupliqué comee accessURL sur la distribution."
+        }
+      ]
+    },
+    {
+      "@id": "dcat:size",
+      "@type": "rdf:Property",
+      "owl:deprecated": true,
+      "rdfs:comment": "the size of a distribution. This term has been deprecated",
+      "rdfs:domain": {
+        "@id": "dcat:Distribution"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "dcat:"
+      },
+      "rdfs:label": "size (Deprecated)",
+      "rdfs:subPropertyOf": {
+        "@id": "dcterms:extent"
+      }
+    }
+  ]
+}

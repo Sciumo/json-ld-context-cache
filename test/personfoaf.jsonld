@@ -1,0 +1,12 @@
+{
+  "@context":{
+    "@vocab": "http://schema.org/",
+    "foaf" : "http://xmlns.com/foaf/0.1/"
+  },
+  "@type": "Person",
+  "name": "Jane Doe",
+  "jobTitle": "Professor",
+  "telephone": "(425) 123-4567",
+  "url": "http://www.janedoe.com",
+  "foaf:knows":"http://johndoe.io/#john"
+}

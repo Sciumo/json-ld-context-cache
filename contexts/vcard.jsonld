@@ -1,0 +1,2945 @@
+{
+  "@context": {
+    "owl": "http://www.w3.org/2002/07/owl#",
+    "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+    "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+    "vcard": "http://www.w3.org/2006/vcard/ns#",
+    "xsd": "http://www.w3.org/2001/XMLSchema#"
+  },
+  "@graph": [
+    {
+      "@id": "_:N5a2894d45f58418b83331c817e4c63e2",
+      "@type": "owl:Restriction",
+      "owl:minQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onClass": {
+        "@id": "vcard:Kind"
+      },
+      "owl:onProperty": {
+        "@id": "vcard:hasMember"
+      }
+    },
+    {
+      "@id": "vcard:Internet",
+      "@type": "owl:Class",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This class is deprecated"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Internet"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:Type"
+      }
+    },
+    {
+      "@id": "vcard:geo",
+      "@type": "owl:ObjectProperty",
+      "owl:equivalentProperty": {
+        "@id": "vcard:hasGeo"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This object property has been mapped"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "geo"
+      }
+    },
+    {
+      "@id": "vcard:anniversary",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The date of marriage, or equivalent, of the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "anniversary"
+      },
+      "rdfs:range": {
+        "@id": "_:N0ef980070d30439a829daef618203eeb"
+      }
+    },
+    {
+      "@id": "_:N39c570e796b9422fa466544d8bcba8e2",
+      "@type": "owl:Restriction",
+      "owl:minCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "0"
+      },
+      "owl:onProperty": {
+        "@id": "vcard:additional-name"
+      }
+    },
+    {
+      "@id": "vcard:Msg",
+      "@type": "owl:Class",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This class is deprecated"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Msg"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:TelephoneType"
+      }
+    },
+    {
+      "@id": "vcard:TelephoneType",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used for telephone type codes. The URI of the telephone type code must be used as the value for the Telephone Type."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Phone"
+      }
+    },
+    {
+      "@id": "vcard:hasStreetAddress",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used to support property parameters for the street address data property"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has street address"
+      }
+    },
+    {
+      "@id": "_:N45d21faa83d445559c9a93371ec48664",
+      "@type": "owl:Restriction",
+      "owl:maxCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "vcard:postal-code"
+      }
+    },
+    {
+      "@id": "vcard:Colleague",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Colleague"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:RelatedType"
+      }
+    },
+    {
+      "@id": "vcard:Emergency",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Emergency"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:RelatedType"
+      }
+    },
+    {
+      "@id": "vcard:Male",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Male"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:Gender"
+      }
+    },
+    {
+      "@id": "vcard:Email",
+      "@type": "owl:Class",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify the electronic mail address for communication with the object the vCard represents. Use the hasEmail object property."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Email"
+      }
+    },
+    {
+      "@id": "vcard:hasLogo",
+      "@type": "owl:ObjectProperty",
+      "owl:equivalentProperty": {
+        "@id": "vcard:logo"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify a graphic image of a logo associated with the object "
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has logo"
+      }
+    },
+    {
+      "@id": "vcard:Intl",
+      "@type": "owl:Class",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This class is deprecated"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Intl"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:Type"
+      }
+    },
+    {
+      "@id": "vcard:Pref",
+      "@type": "owl:Class",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This class is deprecated"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Pref"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:Type"
+      }
+    },
+    {
+      "@id": "vcard:sort-string",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify the string to be used for national-language-specific sorting. Used as a property parameter only."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "sort as"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:latitude",
+      "@type": "owl:DatatypeProperty",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This data property has been deprecated. See hasGeo"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "latitude"
+      }
+    },
+    {
+      "@id": "_:N5a957a0d422f4dee9e2db3709bb51e89",
+      "@type": "owl:Restriction",
+      "owl:minCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "0"
+      },
+      "owl:onProperty": {
+        "@id": "vcard:honorific-prefix"
+      }
+    },
+    {
+      "@id": "vcard:Type",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used for type codes. The URI of the type code must be used as the value for Type."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Type"
+      }
+    },
+    {
+      "@id": "vcard:hasInstantMessage",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify the instant messaging and presence protocol communications with the object. (Was called IMPP in RFC6350)"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has messaging"
+      }
+    },
+    {
+      "@id": "vcard:fn",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The formatted text corresponding to the name of the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "formatted name"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:RelatedType",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used for relation type codes. The URI of the relation type code must be used as the value for the Relation Type."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Relation Type"
+      }
+    },
+    {
+      "@id": "vcard:hasPostalCode",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used to support property parameters for the postal code data property"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has postal code"
+      }
+    },
+    {
+      "@id": "_:N902dc8b24c3848eeb7dfaa1f4a3a06bb",
+      "@type": "owl:Restriction",
+      "owl:minQualifiedCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onDataRange": {
+        "@id": "xsd:string"
+      },
+      "owl:onProperty": {
+        "@id": "vcard:fn"
+      }
+    },
+    {
+      "@id": "vcard:Work",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This implies that the property is related to an individual's work place"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Work"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:Type"
+      }
+    },
+    {
+      "@id": "vcard:Met",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Met"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:RelatedType"
+      }
+    },
+    {
+      "@id": "vcard:hasRole",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used to support property parameters for the role data property"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has role"
+      }
+    },
+    {
+      "@id": "vcard:Text",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Also called sms telephone"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Text"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:TelephoneType"
+      }
+    },
+    {
+      "@id": "_:Nff05456c18cd42129046d218bdf46c56",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "_:N4396cc3cd6484228ba8665c4d0f10ce5"
+          },
+          {
+            "@id": "_:N0721eef4c3634b05ac94c44681cccd7b"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "vcard:hasRegion",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used to support property parameters for the region data property"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has region"
+      }
+    },
+    {
+      "@id": "vcard:hasHonorificSuffix",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used to support property parameters for the honorific suffix data property"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has honorific suffix"
+      }
+    },
+    {
+      "@id": "vcard:Modem",
+      "@type": "owl:Class",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This class is deprecated"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Modem"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:TelephoneType"
+      }
+    },
+    {
+      "@id": "vcard:hasNickname",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used to support property parameters for the nickname data property"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has nickname"
+      },
+      "rdfs:seeAlso": {
+        "@id": "vcard:nickname"
+      }
+    },
+    {
+      "@id": "vcard:Organization",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "An object representing an organization.  An organization is a single entity, and might represent a business or government, a department or division within a business or government, a club, an association, or the like.\n"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Organization"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:Kind"
+      }
+    },
+    {
+      "@id": "_:Nbfea10904a794fcfb87ca1b115f6738e",
+      "@type": "owl:Restriction",
+      "owl:maxCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "vcard:given-name"
+      }
+    },
+    {
+      "@id": "vcard:rev",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify revision information about the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "revision"
+      },
+      "rdfs:range": {
+        "@id": "xsd:dateTime"
+      }
+    },
+    {
+      "@id": "vcard:hasSound",
+      "@type": "owl:ObjectProperty",
+      "owl:equivalentProperty": {
+        "@id": "vcard:sound"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify a digital sound content information that annotates some aspect of the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has sound"
+      }
+    },
+    {
+      "@id": "vcard:hasTelephone",
+      "@type": "owl:ObjectProperty",
+      "owl:equivalentProperty": {
+        "@id": "vcard:tel"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify the telephone number for telephony communication with the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has telephone"
+      }
+    },
+    {
+      "@id": "_:N38b8699bc1a149e29b8cd40af82d80b3",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "vcard:hasMember"
+      },
+      "owl:someValuesFrom": {
+        "@id": "vcard:Kind"
+      }
+    },
+    {
+      "@id": "_:N4e467fbebfde4d44b241bd56469e7ff8",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "_:N58863d077fac434e8d960f8285d220c2"
+          },
+          {
+            "@id": "_:Nbae9cb576b62429fa0610cf1d7c5cd44"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:N5c63a8ad46a648fa8a105e154eea8b91",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "_:N8ecdb9d7371448bb8b335eb867b438c4"
+          },
+          {
+            "@id": "_:Ne1bd04e74d3247bab80d54f9361aca6b"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "vcard:Fax",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Fax"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:TelephoneType"
+      }
+    },
+    {
+      "@id": "_:Na698f1d616f44779ba194c4a6f36004c",
+      "@type": "owl:Restriction",
+      "owl:maxCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "vcard:region"
+      }
+    },
+    {
+      "@id": "vcard:hasCountryName",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used to support property parameters for the country name data property"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has country name"
+      }
+    },
+    {
+      "@id": "vcard:TextPhone",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Text phone"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:TelephoneType"
+      }
+    },
+    {
+      "@id": "vcard:Acquaintance",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Acquaintance"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:RelatedType"
+      }
+    },
+    {
+      "@id": "_:N33a89fbd28de448b8b222bec4b2500b0",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "vcard:honorific-prefix"
+      },
+      "owl:someValuesFrom": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:ISDN",
+      "@type": "owl:Class",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This class is deprecated"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "ISDN"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:Type"
+      }
+    },
+    {
+      "@id": "vcard:Kind",
+      "@type": "owl:Class",
+      "owl:equivalentClass": [
+        {
+          "@id": "_:N902dc8b24c3848eeb7dfaa1f4a3a06bb"
+        },
+        {
+          "@id": "vcard:VCard"
+        }
+      ],
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The parent class for all objects"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Kind"
+      }
+    },
+    {
+      "@id": "_:N1204dbeef9544bfcae7676861c338bf3",
+      "@type": "owl:Restriction",
+      "owl:minCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "0"
+      },
+      "owl:onProperty": {
+        "@id": "vcard:honorific-suffix"
+      }
+    },
+    {
+      "@id": "_:N0721eef4c3634b05ac94c44681cccd7b",
+      "@type": "owl:Restriction",
+      "owl:maxCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "vcard:locality"
+      }
+    },
+    {
+      "@id": "vcard:hasCategory",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used to support property parameters for the category data property"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has category"
+      }
+    },
+    {
+      "@id": "vcard:honorific-prefix",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The honorific prefix of the name associated with the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "honorific prefix"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:Coresident",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Coresident"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:RelatedType"
+      }
+    },
+    {
+      "@id": "vcard:nickname",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The nick name associated with the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "nickname"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:Pager",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Pager"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:TelephoneType"
+      }
+    },
+    {
+      "@id": "vcard:org",
+      "@type": "owl:ObjectProperty",
+      "owl:equivalentProperty": {
+        "@id": "vcard:organization-name"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This object property has been mapped. Use the organization-name data property."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "organization"
+      }
+    },
+    {
+      "@id": "vcard:Parcel",
+      "@type": "owl:Class",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This class is deprecated"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Parcel"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:Type"
+      }
+    },
+    {
+      "@id": "vcard:hasAdditionalName",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used to support property parameters for the additional name data property"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has additional name"
+      }
+    },
+    {
+      "@id": "vcard:Unknown",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Unknown"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:Gender"
+      }
+    },
+    {
+      "@id": "vcard:Name",
+      "@type": "owl:Class",
+      "owl:equivalentClass": {
+        "@id": "_:N39a878a1a2344a4a8a92bb17614621c6"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify the components of the name of the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Name"
+      }
+    },
+    {
+      "@id": "vcard:Gender",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used for gender codes. The URI of the gender code must be used as the value for Gender."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Gender"
+      }
+    },
+    {
+      "@id": "http://www.w3.org/2006/vcard/ns",
+      "@type": "owl:Ontology",
+      "owl:versionInfo": {
+        "@language": "en",
+        "@value": "Final"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Ontology for vCard based on RFC6350"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Ontology for vCard"
+      }
+    },
+    {
+      "@id": "_:N97cb29743e5c41e9909092776b5bb5d8",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "vcard:region"
+      },
+      "owl:someValuesFrom": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:hasUID",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify a value that represents a globally unique identifier corresponding to the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has uid"
+      }
+    },
+    {
+      "@id": "vcard:Home",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This implies that the property is related to an individual's personal life"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Home"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:Type"
+      }
+    },
+    {
+      "@id": "vcard:Me",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Me"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:RelatedType"
+      }
+    },
+    {
+      "@id": "vcard:Agent",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Agent"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:RelatedType"
+      }
+    },
+    {
+      "@id": "vcard:mailer",
+      "@type": "owl:DatatypeProperty",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This data property has been deprecated"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "mailer"
+      }
+    },
+    {
+      "@id": "vcard:tz",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To indicate time zone information that is specific to the object. May also be used as a property parameter."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "time zone"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:post-office-box",
+      "@type": "owl:DatatypeProperty",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This data property has been deprecated"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "post office box"
+      }
+    },
+    {
+      "@id": "vcard:street-address",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The street address associated with the address of the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "street address"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:Label",
+      "@type": "owl:Class",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This class is deprecated"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Label"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:Type"
+      }
+    },
+    {
+      "@id": "vcard:Video",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Video"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:TelephoneType"
+      }
+    },
+    {
+      "@id": "vcard:sound",
+      "@type": "owl:ObjectProperty",
+      "owl:equivalentProperty": {
+        "@id": "vcard:hasSound"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This object property has been mapped"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "sound"
+      }
+    },
+    {
+      "@id": "vcard:agent",
+      "@type": "owl:ObjectProperty",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This object property has been deprecated"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "agent"
+      }
+    },
+    {
+      "@id": "vcard:honorific-suffix",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The honorific suffix of the name associated with the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "honorific suffix"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:postal-code",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The postal code associated with the address of the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "postal code"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:Dom",
+      "@type": "owl:Class",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This class is deprecated"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Dom"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:Type"
+      }
+    },
+    {
+      "@id": "vcard:hasGeo",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify information related to the global positioning of the object. May also be used as a property parameter."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has geo"
+      }
+    },
+    {
+      "@id": "vcard:language",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify the language that may be used for contacting the object. May also be used as a property parameter."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "language"
+      }
+    },
+    {
+      "@id": "vcard:given-name",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The given name associated with the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "given name"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:url",
+      "@type": "owl:ObjectProperty",
+      "owl:equivalentProperty": {
+        "@id": "vcard:hasURL"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This object property has been mapped"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "url"
+      }
+    },
+    {
+      "@id": "vcard:hasSource",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To identify the source of directory information of the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has source"
+      }
+    },
+    {
+      "@id": "vcard:Address",
+      "@type": "owl:Class",
+      "owl:equivalentClass": {
+        "@id": "_:N5bba36db4fb24997804a82bd0b38a1fc"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify the components of the delivery address for the  object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Address"
+      }
+    },
+    {
+      "@id": "vcard:hasOrganizationUnit",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used to support property parameters for the organization unit name data property"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has organization unit name"
+      }
+    },
+    {
+      "@id": "_:Ne5612830deff4996bcf0b05968e715d9",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "_:N4b9688e6961440dd8168645858ccc0a9"
+          },
+          {
+            "@id": "_:N39c570e796b9422fa466544d8bcba8e2"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "vcard:Parent",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Parent"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:RelatedType"
+      }
+    },
+    {
+      "@id": "vcard:Voice",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Voice"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:TelephoneType"
+      }
+    },
+    {
+      "@id": "vcard:value",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used to indicate the literal value of a data property that requires property parameters"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "value"
+      }
+    },
+    {
+      "@id": "_:Nd2a00b2546cd489bbc3ebbd1371ca296",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "_:Nb2a3f97b736f4e2890f21234a142767d"
+          },
+          {
+            "@id": "_:N1204dbeef9544bfcae7676861c338bf3"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "vcard:organization-name",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify the organizational name associated with the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "organization name"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:longitude",
+      "@type": "owl:DatatypeProperty",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This data property has been deprecated. See hasGeo"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "longitude"
+      }
+    },
+    {
+      "@id": "vcard:hasLocality",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used to support property parameters for the locality data property"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has locality"
+      }
+    },
+    {
+      "@id": "vcard:hasPhoto",
+      "@type": "owl:ObjectProperty",
+      "owl:equivalentProperty": {
+        "@id": "vcard:photo"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify an image or photograph information that annotates some aspect of the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has photo"
+      }
+    },
+    {
+      "@id": "_:Nb2a3f97b736f4e2890f21234a142767d",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "vcard:honorific-suffix"
+      },
+      "owl:someValuesFrom": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "_:N39a878a1a2344a4a8a92bb17614621c6",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "_:Ne5612830deff4996bcf0b05968e715d9"
+          },
+          {
+            "@id": "_:N2e90a83673c3465d94700f4c46b4ec22"
+          },
+          {
+            "@id": "_:N1d9e185a09be467e989c46f821b4ae50"
+          },
+          {
+            "@id": "_:Nd551d55d1e194d8d90aa19f8d9d469f2"
+          },
+          {
+            "@id": "_:Nd2a00b2546cd489bbc3ebbd1371ca296"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "vcard:Neighbor",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Neighbor"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:RelatedType"
+      }
+    },
+    {
+      "@id": "vcard:hasOrganizationName",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used to support property parameters for the organization name data property"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has organization name"
+      }
+    },
+    {
+      "@id": "vcard:hasGivenName",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used to support property parameters for the given name data property"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has given name"
+      }
+    },
+    {
+      "@id": "vcard:PCS",
+      "@type": "owl:Class",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This class is deprecated"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "PCS"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:TelephoneType"
+      }
+    },
+    {
+      "@id": "_:Nbae9cb576b62429fa0610cf1d7c5cd44",
+      "@type": "owl:Restriction",
+      "owl:maxCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "vcard:street-address"
+      }
+    },
+    {
+      "@id": "vcard:Crush",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Crush"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:RelatedType"
+      }
+    },
+    {
+      "@id": "_:N4b9688e6961440dd8168645858ccc0a9",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "vcard:additional-name"
+      },
+      "owl:someValuesFrom": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "_:N4396cc3cd6484228ba8665c4d0f10ce5",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "vcard:locality"
+      },
+      "owl:someValuesFrom": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:Sweetheart",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Sweetheart"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:RelatedType"
+      }
+    },
+    {
+      "@id": "_:N58863d077fac434e8d960f8285d220c2",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "vcard:street-address"
+      },
+      "owl:someValuesFrom": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:hasAddress",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify the components of the delivery address for the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has address"
+      },
+      "rdfs:range": {
+        "@id": "vcard:Address"
+      }
+    },
+    {
+      "@id": "vcard:hasNote",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used to support property parameters for the note data property"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has note"
+      }
+    },
+    {
+      "@id": "vcard:email",
+      "@type": "owl:ObjectProperty",
+      "owl:equivalentProperty": {
+        "@id": "vcard:hasEmail"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This object property has been mapped"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "email"
+      }
+    },
+    {
+      "@id": "vcard:Cell",
+      "@type": "owl:Class",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Also called mobile telephone"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Cell"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:TelephoneType"
+      }
+    },
+    {
+      "@id": "vcard:hasCalendarRequest",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify the calendar user address to which a scheduling request be sent for the object. (Was called CALADRURI in RFC6350)"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has calendar request"
+      }
+    },
+    {
+      "@id": "vcard:X400",
+      "@type": "owl:Class",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This class is deprecated"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "X400"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:Type"
+      }
+    },
+    {
+      "@id": "vcard:hasURL",
+      "@type": "owl:ObjectProperty",
+      "owl:equivalentProperty": {
+        "@id": "vcard:url"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify a uniform resource locator associated with the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has url"
+      }
+    },
+    {
+      "@id": "vcard:Tel",
+      "@type": "owl:Class",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This class is deprecated. Use the hasTelephone object property."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Tel"
+      }
+    },
+    {
+      "@id": "_:N0ef980070d30439a829daef618203eeb",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:dateTime"
+          },
+          {
+            "@id": "xsd:gYear"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "vcard:Female",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Female"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:Gender"
+      }
+    },
+    {
+      "@id": "vcard:hasKey",
+      "@type": "owl:ObjectProperty",
+      "owl:equivalentProperty": {
+        "@id": "vcard:key"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify a public key or authentication certificate associated with the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has key"
+      }
+    },
+    {
+      "@id": "vcard:category",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The category information about the object, also known as tags"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "category"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:hasTitle",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used to support property parameters for the title data property"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has title"
+      }
+    },
+    {
+      "@id": "_:Nd109fcf77493463eb329ffc67e275823",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "vcard:family-name"
+      },
+      "owl:someValuesFrom": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:title",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify the position or job of the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "title"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "_:Ne1bd04e74d3247bab80d54f9361aca6b",
+      "@type": "owl:Restriction",
+      "owl:maxCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "vcard:country-name"
+      }
+    },
+    {
+      "@id": "vcard:Kin",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Kin"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:RelatedType"
+      }
+    },
+    {
+      "@id": "vcard:Sibling",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Sibling"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:RelatedType"
+      }
+    },
+    {
+      "@id": "vcard:Group",
+      "@type": "owl:Class",
+      "owl:disjointWith": [
+        {
+          "@id": "vcard:Individual"
+        },
+        {
+          "@id": "vcard:Location"
+        },
+        {
+          "@id": "vcard:Organization"
+        }
+      ],
+      "owl:equivalentClass": {
+        "@id": "_:Nb7a5b8d221684cdda6ac233abc87fde6"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Object representing a group of persons or entities.  A group object will usually contain hasMember properties to specify the members of the group."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Group"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:Kind"
+      }
+    },
+    {
+      "@id": "vcard:photo",
+      "@type": "owl:ObjectProperty",
+      "owl:equivalentProperty": {
+        "@id": "vcard:hasPhoto"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This object property has been mapped"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "photo"
+      }
+    },
+    {
+      "@id": "vcard:Child",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Child"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:RelatedType"
+      }
+    },
+    {
+      "@id": "vcard:hasHonorificPrefix",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used to support property parameters for the honorific prefix data property"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has honorific prefix"
+      }
+    },
+    {
+      "@id": "vcard:hasFN",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used to support property parameters for the formatted name data property"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has formatted name"
+      }
+    },
+    {
+      "@id": "vcard:tel",
+      "@type": "owl:ObjectProperty",
+      "owl:equivalentProperty": {
+        "@id": "vcard:hasTelephone"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This object property has been mapped"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "telephone"
+      }
+    },
+    {
+      "@id": "vcard:hasFamilyName",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used to support property parameters for the family name data property"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has family name"
+      }
+    },
+    {
+      "@id": "vcard:Coworker",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Coworker"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:RelatedType"
+      }
+    },
+    {
+      "@id": "vcard:class",
+      "@type": "owl:DatatypeProperty",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This data property has been deprecated"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "class"
+      }
+    },
+    {
+      "@id": "vcard:adr",
+      "@type": "owl:ObjectProperty",
+      "owl:equivalentProperty": {
+        "@id": "vcard:hasAddress"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This object property has been mapped"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "address"
+      }
+    },
+    {
+      "@id": "_:Nb7a5b8d221684cdda6ac233abc87fde6",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "_:N38b8699bc1a149e29b8cd40af82d80b3"
+          },
+          {
+            "@id": "_:N5a2894d45f58418b83331c817e4c63e2"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "vcard:n",
+      "@type": "owl:ObjectProperty",
+      "owl:equivalentProperty": {
+        "@id": "vcard:hasName"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This object property has been mapped"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "name"
+      }
+    },
+    {
+      "@id": "vcard:role",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify the function or part played in a particular situation by the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "role"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "_:N8ecdb9d7371448bb8b335eb867b438c4",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "vcard:country-name"
+      },
+      "owl:someValuesFrom": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:key",
+      "@type": "owl:ObjectProperty",
+      "owl:equivalentProperty": {
+        "@id": "vcard:hasKey"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This object property has been mapped"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "key"
+      }
+    },
+    {
+      "@id": "vcard:logo",
+      "@type": "owl:ObjectProperty",
+      "owl:equivalentProperty": {
+        "@id": "vcard:hasLogo"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This object property has been mapped"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "logo"
+      }
+    },
+    {
+      "@id": "vcard:region",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The region (e.g. state or province) associated with the address of the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "region"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:hasName",
+      "@type": "owl:ObjectProperty",
+      "owl:equivalentProperty": {
+        "@id": "vcard:n"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify the components of the name of the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has name"
+      },
+      "rdfs:range": {
+        "@id": "vcard:Name"
+      }
+    },
+    {
+      "@id": "vcard:family-name",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The family name associated with the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "family name"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:prodid",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify the identifier for the product that created the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "product id"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:Location",
+      "@type": "owl:Class",
+      "owl:disjointWith": {
+        "@id": "vcard:Organization"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "An object representing a named geographical place"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Location"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:Kind"
+      }
+    },
+    {
+      "@id": "vcard:hasRelated",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify a relationship between another entity and the entity represented by this object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has related"
+      }
+    },
+    {
+      "@id": "_:N2a35e3e742a545739500def07847cf30",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "_:N3473c42c24064e0c9f569d50f5c4fc30"
+          },
+          {
+            "@id": "_:N45d21faa83d445559c9a93371ec48664"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:N2e90a83673c3465d94700f4c46b4ec22",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "_:Nd109fcf77493463eb329ffc67e275823"
+          },
+          {
+            "@id": "_:N82036ce9e2794312b90f95c6075e9e23"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "vcard:VCard",
+      "@type": "owl:Class",
+      "owl:equivalentClass": {
+        "@id": "vcard:Kind"
+      },
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The vCard class is  equivalent to the new Kind class, which is the parent for the four explicit types of vCards (Individual, Organization, Location, Group)"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "VCard"
+      }
+    },
+    {
+      "@id": "vcard:hasEmail",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify the electronic mail address for communication with the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has email"
+      },
+      "rdfs:range": {
+        "@id": "vcard:Email"
+      }
+    },
+    {
+      "@id": "_:N82036ce9e2794312b90f95c6075e9e23",
+      "@type": "owl:Restriction",
+      "owl:maxCardinality": {
+        "@type": "xsd:nonNegativeInteger",
+        "@value": "1"
+      },
+      "owl:onProperty": {
+        "@id": "vcard:family-name"
+      }
+    },
+    {
+      "@id": "_:N5bba36db4fb24997804a82bd0b38a1fc",
+      "@type": "owl:Class",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "_:N5c63a8ad46a648fa8a105e154eea8b91"
+          },
+          {
+            "@id": "_:Nff05456c18cd42129046d218bdf46c56"
+          },
+          {
+            "@id": "_:N2a35e3e742a545739500def07847cf30"
+          },
+          {
+            "@id": "_:N6f7b3c06cc8a4c5b8659fe3692e375cb"
+          },
+          {
+            "@id": "_:N4e467fbebfde4d44b241bd56469e7ff8"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:N6f7b3c06cc8a4c5b8659fe3692e375cb",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "_:N97cb29743e5c41e9909092776b5bb5d8"
+          },
+          {
+            "@id": "_:Na698f1d616f44779ba194c4a6f36004c"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "_:Nb67690837a9b4373b93b23677183041c",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "vcard:given-name"
+      },
+      "owl:someValuesFrom": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:Other",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Other"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:Gender"
+      }
+    },
+    {
+      "@id": "_:N1d9e185a09be467e989c46f821b4ae50",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "_:Nb67690837a9b4373b93b23677183041c"
+          },
+          {
+            "@id": "_:Nbfea10904a794fcfb87ca1b115f6738e"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "vcard:Postal",
+      "@type": "owl:Class",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This class is deprecated"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Postal"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:Type"
+      }
+    },
+    {
+      "@id": "vcard:hasLanguage",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used to support property parameters for the language data property"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has language"
+      }
+    },
+    {
+      "@id": "vcard:locality",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The locality (e.g. city or town) associated with the address of the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "locality"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:organization-unit",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify the organizational unit name associated with the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "organizational unit name"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      },
+      "rdfs:subPropertyOf": {
+        "@id": "vcard:organization-name"
+      }
+    },
+    {
+      "@id": "vcard:hasGender",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify  the sex or gender identity of the object. URIs are recommended to enable interoperable sex and gender codes to be used."
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has gender"
+      }
+    },
+    {
+      "@id": "_:N3473c42c24064e0c9f569d50f5c4fc30",
+      "@type": "owl:Restriction",
+      "owl:onProperty": {
+        "@id": "vcard:postal-code"
+      },
+      "owl:someValuesFrom": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:Spouse",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Spouse"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:RelatedType"
+      }
+    },
+    {
+      "@id": "vcard:note",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "A note associated with the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "note"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:Individual",
+      "@type": "owl:Class",
+      "owl:disjointWith": [
+        {
+          "@id": "vcard:Location"
+        },
+        {
+          "@id": "vcard:Organization"
+        }
+      ],
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "An object representing a single person or entity"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Individual"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:Kind"
+      }
+    },
+    {
+      "@id": "_:Nd551d55d1e194d8d90aa19f8d9d469f2",
+      "@type": "owl:Class",
+      "owl:intersectionOf": {
+        "@list": [
+          {
+            "@id": "_:N33a89fbd28de448b8b222bec4b2500b0"
+          },
+          {
+            "@id": "_:N5a957a0d422f4dee9e2db3709bb51e89"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "vcard:additional-name",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The additional name associated with the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "additional name"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "vcard:hasCalendarBusy",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify the busy time associated with the object. (Was called FBURL in RFC6350)"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has calendar busy"
+      }
+    },
+    {
+      "@id": "vcard:hasCalendarLink",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify the calendar associated with the object. (Was called CALURI in RFC6350)"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has calendar link"
+      }
+    },
+    {
+      "@id": "vcard:Contact",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Contact"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:RelatedType"
+      }
+    },
+    {
+      "@id": "vcard:BBS",
+      "@type": "owl:Class",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This class is deprecated"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "BBS"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:TelephoneType"
+      }
+    },
+    {
+      "@id": "vcard:Car",
+      "@type": "owl:Class",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This class is deprecated"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Car"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:TelephoneType"
+      }
+    },
+    {
+      "@id": "vcard:country-name",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "The country name associated with the address of the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "country name"
+      },
+      "rdfs:range": {
+        "@id": "xsd:string"
+      }
+    },
+    {
+      "@id": "_:N032094714e5443bdb558aac09c44a117",
+      "@type": "rdfs:Datatype",
+      "owl:unionOf": {
+        "@list": [
+          {
+            "@id": "xsd:dateTime"
+          },
+          {
+            "@id": "xsd:dateTimeStamp"
+          },
+          {
+            "@id": "xsd:gYear"
+          }
+        ]
+      }
+    },
+    {
+      "@id": "vcard:bday",
+      "@type": "owl:DatatypeProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To specify the birth date of the object"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "birth date"
+      },
+      "rdfs:range": {
+        "@id": "_:N032094714e5443bdb558aac09c44a117"
+      }
+    },
+    {
+      "@id": "vcard:Friend",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Friend"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:RelatedType"
+      }
+    },
+    {
+      "@id": "vcard:hasMember",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "To include a member in the group this object represents. (This property can only be used by Group individuals)"
+      },
+      "rdfs:domain": {
+        "@id": "vcard:Group"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has member"
+      },
+      "rdfs:range": {
+        "@id": "vcard:Kind"
+      }
+    },
+    {
+      "@id": "vcard:extended-address",
+      "@type": "owl:DatatypeProperty",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This data property has been deprecated"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "extended address"
+      }
+    },
+    {
+      "@id": "vcard:Muse",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Muse"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:RelatedType"
+      }
+    },
+    {
+      "@id": "vcard:hasValue",
+      "@type": "owl:ObjectProperty",
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "Used to indicate the resource value of an object property that requires property parameters"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "has value"
+      }
+    },
+    {
+      "@id": "vcard:None",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "None"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:Gender"
+      }
+    },
+    {
+      "@id": "vcard:Date",
+      "@type": "owl:Class",
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "Date"
+      },
+      "rdfs:subClassOf": {
+        "@id": "vcard:RelatedType"
+      }
+    },
+    {
+      "@id": "vcard:label",
+      "@type": "owl:DatatypeProperty",
+      "owl:deprecated": true,
+      "rdfs:comment": {
+        "@language": "en",
+        "@value": "This data property has been deprecated"
+      },
+      "rdfs:isDefinedBy": {
+        "@id": "http://www.w3.org/2006/vcard/ns"
+      },
+      "rdfs:label": {
+        "@language": "en",
+        "@value": "label"
+      }
+    }
+  ]
+}

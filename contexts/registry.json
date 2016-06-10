@@ -1,0 +1,31 @@
+{
+	"translators": {
+		"rdf-trans-appspot": {
+			"home": "http://rdf-translator.appspot.com",
+			"rest-url": "http://rdf-translator.appspot.com/convert/detect/json-ld/${uri}"
+		}
+	},
+	"contexts": {
+		"schema": {
+			"uri": "http://schema.org/"
+		},
+		"dcat": {
+			"uri": "http://www.w3.org/ns/dcat#"
+		},
+		"vcard": {
+			"uri": "http://www.w3.org/2006/vcard/ns#"
+		},
+		"foaf": {
+			"uri": "http://xmlns.com/foaf/0.1/"
+		},
+		"catalog": {
+			"uri": "https://project-open-data.cio.gov/v1.1/schema/catalog.jsonld"
+		},
+		"dc-elements": {
+			"uri": "http://purl.org/dc/elements/1.1/"
+		},
+		"dc-terms": {
+			"uri": "http://purl.org/dc/terms/"
+		}
+	}
+}
