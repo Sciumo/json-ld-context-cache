@@ -1,11 +1,11 @@
 # jsdon-ld-context-cache
 Caching json-ld context lookups for performance and network access control.
 
-See [http://manu.sporny.org/2016/json-ld-context-caching/](Context caching best practices) for details on why context caches are needed.
+See [Context caching best practice](http://manu.sporny.org/2016/json-ld-context-caching/s) for details on why context caches are needed.
 
 Essentially, by caching json-ld URL lookups, the time for applying json-ld normalization is vastly reduced.
 
-The [https://github.com/msporny/json-jsonld-basic-perftest](context cache test suite) shows how this may be applied.
+The [context cache test suite](https://github.com/msporny/json-jsonld-basic-perftest) shows how this may be applied.
 
 Replace the jsonld node module "documentLoader" function with a cache lookup.
 Original cache example:
@@ -37,6 +37,7 @@ jsonld.documentLoader = function(url, callback) {
 jsonld now supports a documentLoader options parameter.
 
 ```javascript
+var logger = require('winston');
 var jsonld = require('jsonld');
 jsonldcache = require('json-ld-context-cache')( { contextDir: __dirname + '/node_modules/json-ld-context-cache/contexts', log :logger.info });
 var options = {documentLoader:jsonldcache.documentLoader};
